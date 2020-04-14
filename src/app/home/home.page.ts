@@ -7,6 +7,12 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
+  state = false;
+
   constructor() {}
+
+  toggle() {
+    this.state = !this.state;
+  }
 
 }
