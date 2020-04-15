@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-import { IonSlides, LoadingController, NavController } from '@ionic/angular';
+import { IonSlides } from '@ionic/angular';
 
 @Component({
   selector: 'app-slides',
@@ -15,8 +15,12 @@ export class SlidesPage implements OnInit {
   ngOnInit() {
   }
 
-  async goToNextSlide() {
-    await this.slides.slideNext();
+  goToNextSlide() {
+    this.slides.slideNext();
+  }
+
+  goToPrevSlide() {
+    this.slides.slidePrev();
   }
 
 }

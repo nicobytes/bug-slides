@@ -13,5 +13,12 @@
   </ion-slides>
 </ion-content>
 <ion-footer>
-  <ion-button (click)="goToNextSlide()">next</ion-button>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-button (click)="goToPrevSlide()">prev</ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button (click)="goToNextSlide()">next</ion-button>
+    </ion-buttons>
+  </ion-toolbar>
 </ion-footer>
